@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,300;1,900&family=Rubik:wght@300&family=Solway&family=Ubuntu:wght@300&display=swap');
+
+/* typografy */
+/* font-family: 'Lato', sans-serif;
+
+font-family: 'Rubik', sans-serif;
+
+font-family: 'Solway', serif;
+
+font-family: 'Ubuntu', sans-serif; */
+:root
+{
+    --dark-blue:#0f0f10;
+    --dark:#3c31dd;
+}
+
+/* colors start */
+.blue
+{
+    background-color: #3c31dd;
+}
+.red
+{
+    background-color: #dd3f31;
+}
+.pink
+{
+    background:#ff0066 ;
+}
+.dark
+{
+    background-color: #0f0f10;  
+}
+/* colosr end */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    overflow-x: hidden;
+
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    border: none;
+
+}
+.curve
+{
+        position:absolute;
+        height: 225px;
+        width: 100%;
+        bottom: 0;
+}
+.curve::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+
+    width: 55%;
+    height: 100%;
+
+    transform: translate(85%,60%);
+
+    background-color:var(--dark-blue);
+
+}
+.curve::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+
+
+    transform: translate(-4%,40%);
+    background-color:var(--dark);
+
+    width: 55%;
+    height: 100%;
+}
+
+footer
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+.link
+{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+.spacer
+{
+    /* aspect-ratio: 960/300; */
+    /* aspect-ratio: 30/60; */
+    width:100% ;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.layer
+{
+    background-image: url('../img/stacked-waves-haikei.svg');
+}
